@@ -1,12 +1,18 @@
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
+import Home from './pages/Home';
+import Contact from './pages/Contact';
+import Nomatch from './actions/Nomatch';
 
 function App() {
   return (
-      <header>
-        <h1 className="text-3xl font-bold underline">
-          Hello world!
-        </h1>
-      </header>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/contact" element={<Contact/>} />
+        <Route path="*" element={<Nomatch/>} />
+      </Routes>
+    </Router>
   );
 }
 
