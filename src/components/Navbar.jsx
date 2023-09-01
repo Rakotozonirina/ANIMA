@@ -9,7 +9,7 @@ import { RiTwitterLine } from "react-icons/ri";
 
 const Navbar = () => {
 return (
-    <header className="w-full h-[120vh] relative bg-white">
+    <header className="container mx-auto px-[60px] h-[120vh] relative bg-white">
         <nav className='py-4 flex items-center justify-between'>
             <img src={Logo} alt='Logo' width={120} height={120} />
             <h2 className='text-orange-500 cursor-default text-xl font-black underline uppercase leading-[29px]'>acceuil</h2>

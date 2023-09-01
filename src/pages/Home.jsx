@@ -1,10 +1,12 @@
 import React from 'react'
 import Navbar from '../components/Navbar'
+import Product from '../components/Product'
 
 const Home = () => {
 return (
-    <div className="container mx-auto px-[60px]">
+    <div>
         <Navbar/>
+        <Product/>
     </div>
 )
 }
