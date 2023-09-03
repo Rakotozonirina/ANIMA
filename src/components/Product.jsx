@@ -121,7 +121,7 @@ const Product = () => {
                 <section className='absolute top-[14%] left-0'>
                     <img src={IlustrationFlowerNine} alt="Nine flower" />
                 </section>
-                <section className='absolute top-0 left-[7%]'>
+                <section className='absolute top-[5%] left-[7%]'>
                     <img src={IlustrationFlowerTen} alt="Ten flower" />
                 </section>
                 <article className='flex px-[60px] gap-4 flex-col justify-center grow w-[577px]'>
