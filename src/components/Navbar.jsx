@@ -44,7 +44,7 @@ return (
                 </div>
             </article>
             <section className='w-[580px] relative grow'>
-                <img src={ImageHero} alt="hero page" width={600} height={748} className='absolute top-[-15%] left-[-15%]' />
+                <img src={ImageHero} alt="hero page" p-3 shadow-lg rounded-tl-lg rounded-br-lg bg-orange-500 text-white text-base font-bold className='absolute top-[-15%] left-[-15%]' />
             </section>
         </section>
     </header>
