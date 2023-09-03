@@ -3,6 +3,7 @@ import './App.css';
 import Home from './pages/Home';
 import Contact from './pages/Contact';
 import Nomatch from './actions/Nomatch';
+import About from './pages/About';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/contact" element={<Contact/>} />
         <Route path="*" element={<Nomatch/>} />
+        <Route path='/about' element={<About/>} />
       </Routes>
     </Router>
   );
