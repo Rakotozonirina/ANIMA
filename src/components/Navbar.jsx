@@ -28,7 +28,9 @@ return (
                     <Link to="/about">
                         <button className='capitalize w-[120px] p-3 shadow-lg rounded-tl-lg rounded-br-lg bg-[#101A24] text-white text-base font-bold leading-[29px]'>à propos</button>
                     </Link>
-                    <button className='capitalize w-[167px] p-3 shadow-lg rounded-tl-lg rounded-br-lg bg-orange-500 text-white text-base font-bold leading-[29px] mx-8'>shop</button>
+                    <Link to="/shop">
+                        <button className='capitalize w-[167px] p-3 shadow-lg rounded-tl-lg rounded-br-lg bg-orange-500 text-white text-base font-bold leading-[29px] mx-8'>shop</button>
+                    </Link>
                 </div>
                 <div className='my-3 flex items-center gap-4'>
                     <div className='flex gap-4'>
