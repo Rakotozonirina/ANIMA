@@ -7,8 +7,9 @@ import ShopFoodTwo from '../public/shop_food_two.png'
 import ShopHeroFood from '../public/shop_hero_food.png'
 import ShopHeroFoodOne from '../public/shop_hero_food_one.png'
 import ShopHeroFoodTwo from '../public/shop_hero_food_two.png'
-import ShopMenuFood from '../public/shop_menu_food.png'
 import { PiQuotesFill } from "react-icons/pi"
+import {Menus} from '../actions/menus'
+
 
 const NavbarShop = () => {
     return(
@@ -22,7 +23,7 @@ const NavbarShop = () => {
                     Contactez-nous
                 </Link>
             </nav>
-            <section className='h-[650vh] bg-stone-200'>
+            <section className='h-[820vh] bg-stone-200'>
                 <article className='h-[60vh] relative flex flex-col items-center justify-center gap-4'>
                     <section className='absolute top-0 left-[30%]'>
                         <img src={ShopFood} alt=" shop food " />
@@ -64,28 +65,30 @@ const NavbarShop = () => {
                         <img src={ShopFoodTwo} alt="shop food two" />
                     </section>
                 </article>
-                <section className='gap-[40px] flex flex-wrap h-[470vh]'>
-                    <section className='w-[350px] h-[350px] bg-zinc-800 rounded-[15px] shadow'>
+                <section className='gap-[40px] justify-center flex flex-wrap h-[640vh]'>
+                    {Menus.map((menu) => (
+                        <section className='w-[350px] h-[350px] bg-zinc-800 rounded-[15px] shadow' key={menu.id}>
                         <section className='relative justify-end  h-[175px] flex'>
-                            <div className='absolute top-[-50%] left-[-20%]'>
-                                <img src={ShopMenuFood} alt="shop menu food" />
+                            <div className='absolute top-[-64%] left-[-20%]'>
+                                <img src={menu.image} alt={menu.titre} />
                             </div>
                             <article className='flex items-end justify-center w-[175px]'>
-                                <p className='text-center text-white text-3xl font-bold mb-8'>15 000 Ar</p>
+                                <p className='text-center text-white text-3xl font-bold mb-8'>{menu.prix}</p>
                             </article>
                         </section>
                         <article className='flex flex-col gap-4 h-[175px]'>
                             <div className='pl-4'>
-                                <h2 className='text-white text-3xl font-bold'>Chicken Spaghetti</h2>
-                                <p className='text-white text-xl font-medium'>With Special Sauce</p>
+                                <h2 className='text-white text-3xl font-bold'>{menu.titre}</h2>
+                                <p className='text-white text-xl font-medium'>{menu.subtitre}</p>
                             </div>
                             <div className='flex items-center justify-center h-[86px]'>
                                 <button className='w-[301px] h-[46px] pl-[99px] pr-[97px] pt-[9px] text-orange-500 text-xl font-bold pb-2.5 bg-white rounded-[10px] justify-center items-center inline-flex'>
-                                    Commande
+                                    {menu.button}
                                 </button>
                             </div>
                         </article>
                     </section>
+                    )) }
                 </section>
             </section>
         </header>
