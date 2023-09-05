@@ -7,6 +7,17 @@ import ShopFoodTwo from '../public/shop_food_two.png'
 import ShopHeroFood from '../public/shop_hero_food.png'
 import ShopHeroFoodOne from '../public/shop_hero_food_one.png'
 import ShopHeroFoodTwo from '../public/shop_hero_food_two.png'
+import Tomate from '../public/tomate.png'
+import TomateOne from '../public/tomate_one.png'
+import Rectangle from '../public/Rectangle_one.png'
+import Leaf from '../public/leaf.png'
+import LeafOne from '../public/leaf_one.png'
+import Circle from '../public/circle.png'
+import CircleOne from '../public/circle_one.png'
+import Orange from '../public/orange.png'
+import OrangeOne from '../public/orange_one.png'
+import Garlic from '../public/garlic.png'
+import RectangleTwo from '../public/Rectangle_two.png'
 import { PiQuotesFill } from "react-icons/pi"
 import {Menus} from '../actions/menus'
 
@@ -23,7 +34,43 @@ const NavbarShop = () => {
                     Contactez-nous
                 </Link>
             </nav>
-            <section className='h-[820vh] bg-stone-200'>
+            <section className='absolute z-[-10] left-0 top-[2%]'>
+                <img src={Tomate} alt="first tomato" />
+            </section>
+            <section className='absolute z-[-10] top-[3%] right-0'>
+                <img src={Rectangle} alt="rectangle" />
+            </section>
+            <section className='absolute z-[-10] top-[9%] left-0'>
+                <img src={Leaf} alt="leaf" />
+            </section>
+            <section className='absolute z-[-10] top-[3%] left-0'>
+                <img src={Circle} alt="circle"/>
+            </section>
+            <section className='absolute top-[7.5%] right-0'>
+                <img src={Orange} alt="orange"/>
+            </section>
+            <section className='absolute top-[18%] left-0'>
+                <img src={OrangeOne} alt="orange one"/>
+            </section>
+            <section className='absolute top-[21%] right-0'>
+                <img src={CircleOne} alt="circle one" />
+            </section>
+            <section className='absolute top-[23%] right-0'>
+                <img src={LeafOne} alt="leaf one" />
+            </section>
+            <section className='absolute z-[-10] top-[28%] left-[26%]'>
+                <img src={ShopFoodTwo} alt="shop food two" />
+            </section>
+            <section className='absolute top-[30%] left-0'>
+                <img src={RectangleTwo} alt="rectangle" />
+            </section>
+            <section className='absolute top-[34%] left-0'>
+                <img src={Leaf} alt="leaf one" />
+            </section>
+            <section className='absolute top-[32%] right-0'>
+                <img src={TomateOne} alt="tomate one" />
+            </section>
+            <section className='h-[820vh] bg-stone-200/50'>
                 <article className='h-[60vh] relative flex flex-col items-center justify-center gap-4'>
                     <section className='absolute top-0 left-[30%]'>
                         <img src={ShopFood} alt=" shop food " />
