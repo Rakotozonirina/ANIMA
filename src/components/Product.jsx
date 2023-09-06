@@ -51,21 +51,21 @@ const Datas = [
 const Product = () => {
     return(
         <main>
-                <div className='bg-gray-900/25 w-full flex flex-col gap-[200px] mx-auto px-[60px] h-[260vh]'>
+                <div className='bg-gray-900/25 border border-red-500 w-full flex flex-col gap-[200px] mx-auto px-[60px] h-[400vh] lg:h-[260vh]'>
                 <section className='flex flex-col gap-[150px]'>
                     <section className='flex items-center justify-center gap-4'>
                         <div>
                             <img src={IlustrationFlower} alt="premier illustration flower" width={224} height={212} />
                         </div>
                         <article className='flex flex-col items-center justify-center'>
-                            <h1 className='text-center text-gray-900 text-[54px] font-bold leading-[65px]'>Nos plats spéciaux</h1>
+                            <h1 className='text-center text-gray-900 text-[32px] lg:text-[54px] font-bold leading-[65px]'>Nos plats spéciaux</h1>
                             <p className='w-[376px] text-center text-gray-500 text-base font-medium leading-[29px]'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla qui nostrum Nulla qui nostrum</p>
                         </article>
                         <div>
                             <img src={IlustrationFlowerOne} alt="deuxième illustration flower" width={180} height={253} />
                         </div>
                     </section>
-                    <section className='relative flex items-center justify-center gap-6'>
+                    <section className='relative flex flex-wrap gap-8 justify-center lg:flex lg:items-center lg:justify-center lg:gap-6'>
                         {Datas.map((Data) => (
                             <section className='w-[265px] h-[309px] border border-white flex items-end justify-center relative shadow-lg rounded-tl-[12px] rounded-br-[12px]' key={Data.id}>
                                 <section className='absolute top-[-30%] left-[10%]'>
@@ -94,7 +94,7 @@ const Product = () => {
                         </section>
                     </section>
                 </section>
-                <section className='flex'>
+                <section className='flex border border-red-400'>
                     <div className='grow'>
                         <img src={HeroFood} alt="hero food" width={600} />
                     </div>
