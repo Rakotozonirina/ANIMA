@@ -9,13 +9,18 @@ import ShopHeroFoodOne from '../public/shop_hero_food_one.png'
 import ShopHeroFoodTwo from '../public/shop_hero_food_two.png'
 import Tomate from '../public/tomate.png'
 import TomateOne from '../public/tomate_one.png'
+import TomateTwo from '../public/tomate_two.png'
 import Rectangle from '../public/Rectangle_one.png'
+import RectangleThree from '../public/Rectangle_three.png'
 import Leaf from '../public/leaf.png'
 import LeafOne from '../public/leaf_one.png'
 import Circle from '../public/circle.png'
 import CircleOne from '../public/circle_one.png'
+import CircleTwo from '../public/circle_two.png'
 import Orange from '../public/orange.png'
 import OrangeOne from '../public/orange_one.png'
+import Chily from '../public/chily.png'
+import ChilyOne from '../public/chily_one.png'
 import Garlic from '../public/garlic.png'
 import RectangleTwo from '../public/Rectangle_two.png'
 import { PiQuotesFill } from "react-icons/pi"
@@ -69,6 +74,27 @@ const NavbarShop = () => {
             </section>
             <section className='absolute top-[32%] right-0'>
                 <img src={TomateOne} alt="tomate one" />
+            </section>
+            <section className='absolute top-[60%] left-0'>
+                <img src={Circle} alt="circle"/>
+            </section>
+            <section className='absolute top-[70%] left-0'>
+                <img src={Chily} alt="chily" />
+            </section>
+            <section className='absolute top-[80%] right-0'>
+                <img src={ChilyOne} alt="chily one"/>
+            </section>
+            <section className='absolute bottom-0 left-0'>
+                <img src={CircleTwo} alt="circle two" />
+            </section>
+            <section className='absolute bottom-0 left-0'>
+                <img src={TomateTwo} alt="Tomate Two" />
+            </section>
+            <section className='absolute bottom-[-4%] right-0'>
+                <img src={RectangleThree} alt="Rectangle Three" />
+            </section>
+            <section className='absolute z-[-10] bottom-[-2%] right-[14%]'>
+                <img src={Garlic} alt="garlic" />
             </section>
             <section className='h-[820vh] bg-stone-200/50'>
                 <article className='h-[60vh] relative flex flex-col items-center justify-center gap-4'>
