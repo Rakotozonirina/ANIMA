@@ -58,7 +58,7 @@ const Product = () => {
                             <img src={IlustrationFlower} alt="premier illustration flower" width={224} height={212} />
                         </div>
                         <article className='flex flex-col items-center justify-center'>
-                            <h1 className='text-center text-gray-900 text-6xl font-bold leading-[65px]'>Nos plats spéciaux</h1>
+                            <h1 className='text-center text-gray-900 text-[54px] font-bold leading-[65px]'>Nos plats spéciaux</h1>
                             <p className='w-[376px] text-center text-gray-500 text-base font-medium leading-[29px]'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla qui nostrum Nulla qui nostrum</p>
                         </article>
                         <div>
@@ -102,7 +102,7 @@ const Product = () => {
                             <section>
                                 <img src={IlustrationFlower} alt="premier flower" className='absolute top-0 left-[-10%]' />
                             </section>
-                            <h1 className='w-[442px] text-gray-900 text-6xl font-bold leading-[65px]'>Bienvenue dans notre restaurant</h1>
+                            <h1 className='w-[442px] text-gray-900 text-[54px] font-bold leading-[65px]'>Bienvenue dans notre restaurant</h1>
                             <p className='w-[376px] text-gray-500 text-start text-base font-medium leading-[29px]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                             <button className='w-[448px] p-3 bg-gray-900 text-center text-white text-xl font-bold leading-[29px] shadow-lg rounded-tl-[12px] rounded-br-[12px]'>Liste des produits</button>
                             <section className='absolute bottom-0 left-[-30%]'>
@@ -125,7 +125,7 @@ const Product = () => {
                     <img src={IlustrationFlowerTen} alt="Ten flower" />
                 </section>
                 <article className='flex px-[60px] gap-4 flex-col justify-center grow w-[577px]'>
-                    <h2 className='text-gray-900 text-6xl font-bold leading-[65px]'>
+                    <h2 className='text-gray-900 text-[54px] font-bold leading-[65px]'>
                         <span className='uppercase'>à</span> propos de nous
                     </h2>
                     <p className='text-justify text-gray-500 text-base font-medium leading-[29px]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br/><br/>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>

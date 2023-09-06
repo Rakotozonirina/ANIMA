@@ -101,7 +101,7 @@ const NavbarShop = () => {
                     <section className='absolute top-0 left-[30%]'>
                         <img src={ShopFood} alt=" shop food " />
                     </section>
-                    <h1 className='text-center text-gray-900 text-[66px] font-bold leading-[72px]'>
+                    <h1 className='text-center text-gray-900 text-[54px] font-bold leading-[72px]'>
                         Découvrez Notre Menu Étoilé de Saveurs Exquises
                     </h1>
                     <p className='w-[599px] text-center text-gray-500 text-base font-medium leading-[29px]'>
@@ -132,7 +132,7 @@ const NavbarShop = () => {
                     <section className='absolute top-[20%] right-[24%]'>
                         <PiQuotesFill className='w-[32px] h-[32px] rotate-180' />
                     </section>
-                    <h2 className='text-center text-gray-900 text-6xl font-bold leading-[65px]'>Shop</h2>
+                    <h2 className='text-center text-gray-900 text-[54px] font-bold leading-[65px]'>Shop</h2>
                     <p className='w-[376px] text-center text-gray-500 text-base font-medium leading-[29px]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
                     <section className='absolute bottom-[6%] right-[10%]'>
                         <img src={ShopFoodTwo} alt="shop food two" />
@@ -146,12 +146,12 @@ const NavbarShop = () => {
                                 <img src={menu.image} alt={menu.titre} />
                             </div>
                             <article className='flex items-end justify-center w-[175px]'>
-                                <p className='text-center text-white text-3xl font-bold mb-8'>{menu.prix}</p>
+                                <p className='text-center text-white text-[24px] font-bold mb-8'>{menu.prix}</p>
                             </article>
                         </section>
                         <article className='flex flex-col gap-4 h-[175px]'>
                             <div className='pl-4'>
-                                <h2 className='text-white text-3xl font-bold'>{menu.titre}</h2>
+                                <h2 className='text-white text-[24px] font-bold'>{menu.titre}</h2>
                                 <p className='text-white text-xl font-medium'>{menu.subtitre}</p>
                             </div>
                             <div className='flex items-center justify-center h-[86px]'>
