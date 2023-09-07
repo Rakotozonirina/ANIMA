@@ -6,34 +6,34 @@ import { RiTwitterLine } from "react-icons/ri";
 
 const Footer = () => {
 return (
-    <footer className='h-[624px] relative flex flex-col justify-center gap-[80px] bg-zinc-100 mx-auto px-[60px]'>
-        <section className='flex justify-between px-[60px]'>
+    <footer className='h-[120vh] lg:h-[624px] relative flex flex-col justify-center gap-[80px] bg-zinc-100 mx-auto px-[60px]'>
+        <section className='lg:flex justify-between lg:px-[60px]'>
             <section>
                 <section>
                     <div>
-                        <img src={ImgLogo} alt="logo" />
+                        <img src={ImgLogo} alt="logo"/>
                     </div>
                     <article>
-                        <p className='w-[485px] my-2 text-gray-500 text-base font-normal leading-[29px]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+                        <p className='lg:w-[485px] my-2 text-gray-500 text-base font-normal leading-[29px]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
                     </article>
                 </section>
                 <section>
                     <h2 className='text-gray-900 text-xs font-extrabold uppercase leading-10'>HORAIRES D'OUVERTURES</h2>
-                    <table className='w-[446px] text-gray-500 text-base font-normal leading-[29px]'>
+                    <table className='lg:w-[446px] w-full text-gray-500 text-base font-normal leading-[29px]'>
                         <tr>
-                            <th className='text-start'>Lundi vendredi</th>
-                            <th className='text-start'>Samedi</th>
-                            <th className='text-start'>Dimanche</th>
+                            <th className='py-4 lg:py-0 lg:text-start'>Lundi vendredi</th>
+                            <th className='lg:text-start'>Samedi</th>
+                            <th className='lg:text-start'>Dimanche</th>
                         </tr>
                         <tr>
-                            <td>08h00 à 21h00</td>
-                            <td>08h00 à 21h00</td>
-                            <td className='uppercase'>fermé</td>
+                            <td className='py-4 lg:py-0 text-center lg:text-start'>08h00 à 21h00</td>
+                            <td className='text-center lg:text-start'>08h00 à 21h00</td>
+                            <td className='uppercase text-center lg:text-start'>fermé</td>
                         </tr>
                     </table>
                 </section>
             </section>
-            <section className='py-36'>
+            <section className='py-8 lg:py-36'>
                     <div className='flex gap-4'>
                         <span className='w-[45px] h-[45px] flex items-center justify-center rounded-full border border-gray-900'>
                             <FaFacebookF/>
@@ -47,7 +47,7 @@ return (
                     </div>
             </section>
         </section>
-        <section className='px-[60px]'>
+        <section className='lg:px-[60px]'>
             <div className='py-4 border-t-[1px] border-gray-900'>
                 <p className='text-gray-500 text-base font-normal leading-[29px]'>&copy; Restauration 2023. Tous droits réservés. Conçu par Anima Technologie</p>
             </div>
