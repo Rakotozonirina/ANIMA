@@ -51,7 +51,7 @@ const Datas = [
 const Product = () => {
     return(
         <main>
-                <div className='bg-gray-900/25 w-full flex flex-col gap-[200px] mx-auto px-[60px] h-[400vh] lg:h-[260vh]'>
+                <div className='bg-gray-900/25 w-full flex flex-col gap-[200px] mx-auto px-[60px] h-[420vh] lg:h-[260vh]'>
                 <section className='flex flex-col gap-[150px]'>
                     <section className='flex items-center justify-center gap-4'>
                         <div>
@@ -65,7 +65,7 @@ const Product = () => {
                             <img src={IlustrationFlowerOne} alt="deuxième illustration flower" width={180} height={253} />
                         </div>
                     </section>
-                    <section className='relative flex flex-wrap gap-8 justify-center lg:flex lg:items-center lg:justify-center lg:gap-6'>
+                    <section className='relative flex flex-wrap gap-[100px] justify-center lg:flex lg:items-center lg:justify-center lg:gap-6'>
                         {Datas.map((Data) => (
                             <section className='w-[265px] h-[309px] border border-white flex items-end justify-center relative shadow-lg rounded-tl-[12px] rounded-br-[12px]' key={Data.id}>
                                 <section className='absolute top-[-30%] left-[10%]'>
