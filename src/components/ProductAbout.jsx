@@ -14,18 +14,18 @@ import Rosemary from '../public/rosemary.png'
 const ProductAbout = () => {
 return (
     <main className='container mx-auto px-[60px]'>
-        <section className="flex h-[180vh]">
-            <section className='grow w-[580px] py-32'>
+        <section className="lg:flex lg:h-[180vh]">
+            <section className='lg:grow lg:w-[580px] py-8 lg:py-32'>
                 <img src={AboutOne} alt="about one" />
             </section>
-            <section className='grow py-32 relative'> 
-                <article className='w-[510px] absolute top-[10%] left-[-30%]'>
-                    <h1 className='text-black text-[54px] font-bold leading-[64px]'>Historique de QG</h1>
-                    <p className='text-neutral-600 text-2xl font-normal leading-[33.60px] tracking-wide'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    <p className='text-justify text-neutral-600 text-2xl font-normal leading-[33.60px] tracking-wide'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et in sed in pellentesque ornare nunc nisl. Augue habitant accumsan, ut parturient orci ac etiam congue mi.</p>
+            <section className='lg:grow py-8 lg:py-32 lg:relative'> 
+                <article className='lg:w-[510px] lg:absolute lg:top-[10%] lg:left-[-30%]'>
+                    <h1 className='text-black text-[32px] lg:text-[54px] font-bold leading-[64px]'>Historique de QG</h1>
+                    <p className='text-neutral-600 text-xl lg:text-2xl font-normal leading-[33.60px] tracking-wide'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <p className='text-justify text-neutral-600 text-xl lg:text-2xl font-normal leading-[33.60px] tracking-wide'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et in sed in pellentesque ornare nunc nisl. Augue habitant accumsan, ut parturient orci ac etiam congue mi.</p>
                 </article>
-                <article className='w-[406px] mx-4 mt-[290px]'>
-                    <p className='text-justify text-neutral-600 text-2xl font-normal leading-[33.60px] tracking-wide'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et in sed in pellentesque ornare nunc nisl. Augue habitant accumsan, ut parturient orci ac etiam congue mi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et in sed in pellentesque ornare nunc nisl. Augue habitant accumsan, ut parturient orci ac etiam congue mi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et in sed in pellentesque ornare nunc nisl. Augue habitant accumsan, ut parturient orci ac etiam congue mi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et in sed in pellentesque ornare nunc nisl. Augue habitant accumsan, ut parturient orci ac etiam congue mi.</p>
+                <article className='lg:w-[406px] lg:mx-4 mt-12 lg:mt-[290px]'>
+                    <p className='text-justify text-neutral-600 text-xl lg:text-2xl font-normal leading-[33.60px] tracking-wide'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et in sed in pellentesque ornare nunc nisl. Augue habitant accumsan, ut parturient orci ac etiam congue mi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et in sed in pellentesque ornare nunc nisl. Augue habitant accumsan, ut parturient orci ac etiam congue mi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et in sed in pellentesque ornare nunc nisl. Augue habitant accumsan, ut parturient orci ac etiam congue mi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et in sed in pellentesque ornare nunc nisl. Augue habitant accumsan, ut parturient orci ac etiam congue mi.</p>
                 </article>
             </section>
         </section>
@@ -34,55 +34,55 @@ return (
                 <img src={IlustrationFlower} alt="premier illustration flower" width={224} height={212} />
             </div>
             <article className='flex flex-col items-center justify-center'>
-                <h1 className='text-center text-gray-900 text-[54px] font-bold leading-[65px]'>Présentation</h1>
-                <p className='w-[376px] text-center text-neutral-600 text-2xl font-normal leading-[33.60px] tracking-wide'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla qui nostrum Nulla qui nostrum</p>
+                <h1 className='text-center text-gray-900 text-[32px] lg:text-[54px] font-bold leading-[65px]'>Présentation</h1>
+                <p className='w-full lg:w-[376px] text-center text-neutral-600 text-xl lg:text-2xl font-normal leading-[33.60px] tracking-wide'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla qui nostrum Nulla qui nostrum</p>
             </article>
             <div>
                 <img src={IlustrationFlowerOne} alt="deuxième illustration flower" width={180} height={253} />
             </div>
         </section>
-        <section>
+        <section className='mt-8 lg:mt-0'>
             <img src={AboutTwo} alt="about two" />
         </section>
         <section className='h-[40vh] flex items-center justify-center'>
             <article>
-                <h2 className='text-center text-black text-[54px] font-bold leading-[64px]'>Notre Marque</h2>
-                <p className='w-[452px] text-center text-neutral-600 text-2xl font-normal leading-[33.60px] tracking-wide'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <h2 className='text-center text-black text-[32px] lg:text-[54px] font-bold leading-[64px]'>Notre Marque</h2>
+                <p className='w-full lg:w-[452px] text-center text-neutral-600 text-xl lg:text-2xl font-normal leading-[33.60px] tracking-wide'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </article>
         </section>
-        <section className='relative flex flex-col gap-[80px] h-[280vh]'>
-            <section className='flex gap-4'>
-                <div className='grow'>
-                    <img src={Slice} alt="slice" />
+        <section className='relative flex flex-col gap-[80px] h-[350vh] lg:h-[280vh]'>
+            <section className='lg:flex lg:gap-4'>
+                <div className='lg:grow'>
+                    <img src={Slice} alt="slice"/>
                 </div>
-                <article className='grow w-[568px] flex flex-col justify-center'>
-                    <h2 className='text-black text-[65px] font-bold leading-[105.60px]'>01.Slice</h2>
-                    <p className='text-justify text-neutral-600 text-2xl font-normal leading-[33.60px] tracking-wide'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus lorem id penatibus imperdiet. Turpis egestas ultricies purus auctor tincidunt lacus nunc. Convallis pellentesque quis fringilla sagittis. Egestas in risus sit nunc nunc, arcu donec nam etiam.</p>
+                <article className='lg:grow lg:w-[568px] flex flex-col justify-center'>
+                    <h2 className='text-black text-[32px] lg:text-[65px] font-bold leading-[105.60px]'>01.Slice</h2>
+                    <p className='text-justify text-neutral-600 text-xl lg:text-2xl font-normal leading-[33.60px] tracking-wide'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus lorem id penatibus imperdiet. Turpis egestas ultricies purus auctor tincidunt lacus nunc. Convallis pellentesque quis fringilla sagittis. Egestas in risus sit nunc nunc, arcu donec nam etiam.</p>
                 </article>
             </section>
-            <div className='absolute top-[26%] left-[-10%]'>
-                <img src={Rosemary} alt="rosemary" />
+            <div className='absolute top-[28%] left-[-20%] lg:absolute lg:top-[26%] lg:left-[-10%]'>
+                <img src={Rosemary} alt="rosemary"/>
             </div>
-            <section className='flex justify-between h-[180vh]'>
-                <section className='flex items-end'>
-                    <div className='w-[512px] h-[719px]'>
+            <section className='flex flex-col gap-14 lg:flex-row lg:gap-0 lg:flex lg:justify-between h-[250vh] lg:h-[180vh]'>
+                <section className='lg:flex lg:items-end'>
+                    <div className='lg:w-[512px] lg:h-[719px]'>
                         <article>
-                            <h2 className='text-black text-[64px] font-bold leading-[105.60px]'>03.Bake</h2>
-                            <p className='text-justify mb-8 text-neutral-600 text-2xl font-normal leading-[33.60px] tracking-wide'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus lorem id penatibus imperdiet. Turpis egestas ultricies purus auctor tincidunt lacus nunc. Convallis pellentesque quis fringilla sagittis. Egestas in risus sit nunc nunc, arcu donec nam etiam.</p>
+                            <h2 className='text-black text-[32px] lg:text-[64px] font-bold leading-[105.60px]'>03.Bake</h2>
+                            <p className='text-justify mb-8 text-neutral-600 text-xl lg:text-2xl font-normal leading-[33.60px] tracking-wide'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus lorem id penatibus imperdiet. Turpis egestas ultricies purus auctor tincidunt lacus nunc. Convallis pellentesque quis fringilla sagittis. Egestas in risus sit nunc nunc, arcu donec nam etiam.</p>
                         </article>
                         <section>
-                            <img src={SliceTwo} alt="bake pic" />
+                            <img src={SliceTwo} alt="bake pic"/>
                         </section>
                     </div>
                 </section>
                 <section>
-                    <div className='w-[512px] h-[719px]'>
+                    <div className='lg:w-[512px] lg:h-[719px]'>
                         <section>
                             <img src={SliceOne} alt="second slice" />
                         </section>
                         <article>
-                            <h2 className='text-black text-[64px] font-bold leading-[105.60px]'>02.Pickled</h2>
-                            <p className='text-justify text-neutral-600 text-2xl font-normal leading-[33.60px] tracking-wide'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus lorem id penatibus imperdiet. Turpis egestas ultricies purus auctor tincidunt lacus nunc. Convallis pellentesque quis fringilla sagittis. Egestas in risus sit nunc nunc, arcu donec nam etiam.</p>
+                            <h2 className='text-black text-xl lg:text-[64px] font-bold leading-[105.60px]'>02.Pickled</h2>
+                            <p className='text-justify text-neutral-600 text-xl lg:text-2xl font-normal leading-[33.60px] tracking-wide'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus lorem id penatibus imperdiet. Turpis egestas ultricies purus auctor tincidunt lacus nunc. Convallis pellentesque quis fringilla sagittis. Egestas in risus sit nunc nunc, arcu donec nam etiam.</p>
                         </article>
                     </div>
                 </section>

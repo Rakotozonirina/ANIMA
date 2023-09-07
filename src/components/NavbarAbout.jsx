@@ -6,7 +6,7 @@ import HeroAbout from '../public/hero_about.png'
 const NavbarAbout = () => {
 return (
     <header>
-        <nav className='container mx-auto px-[60px] py-4 flex items-center justify-between'>
+        <nav className='lg:container py-8 flex flex-wrap justify-center gap-4 items-center lg:gap-0 lg:flex-nowrap lg:mx-auto px-[60px] lg:py-4 lg:flex lg:items-center lg:justify-between'>
             <Link to="/">
                 <img src={Logo} alt='Logo' width={120} height={120} />
             </Link>
