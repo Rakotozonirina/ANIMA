@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import IlustrationFlower from '../public/illustration_flower.png'
 import IlustrationFlowerOne from '../public/illustration_flower_one.png'
 import IlustrationFlowerTwo from '../public/illustration_flower_two.png'
@@ -58,7 +59,7 @@ const Product = () => {
                             <img src={IlustrationFlower} alt="premier illustration flower" width={224} height={212} />
                         </div>
                         <article className='flex flex-col items-center justify-center'>
-                            <h1 className='text-center text-gray-900 text-[32px] lg:text-[54px] font-bold leading-[65px]'>Nos plats spéciaux</h1>
+                            <h1 className='text-center text-gray-900 text-[32px] lg:text-[54px] font-bold leading-[65px] font-libredavid'>Nos plats spéciaux</h1>
                             <p className='w-[376px] text-center text-gray-500 text-base font-medium leading-[29px]'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla qui nostrum Nulla qui nostrum</p>
                         </article>
                         <div>
@@ -104,7 +105,9 @@ const Product = () => {
                             </section>
                             <h1 className='lg:w-[442px] text-gray-900 lg:text-[54px] font-bold leading-[65px]'>Bienvenue dans notre restaurant</h1>
                             <p className='lg:w-[376px] text-gray-500 text-start text-base font-medium leading-[29px]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                            <button className='lg:w-[448px] p-3 bg-gray-900 text-center text-white text-xl font-bold leading-[29px] shadow-lg rounded-tl-[12px] rounded-br-[12px]'>Liste des produits</button>
+                            <Link to="/list">
+                                <button className='lg:w-[448px] p-3 bg-gray-900 text-center text-white text-xl font-bold leading-[29px] shadow-lg rounded-tl-[12px] rounded-br-[12px]'>Liste des produits</button>
+                            </Link>
                             <section className='absolute bottom-0 left-[-30%]'>
                                 <img src={IlustrationFlowerSix} alt="six flower" />
                             </section>

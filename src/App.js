@@ -5,6 +5,7 @@ import Contact from './pages/Contact';
 import Nomatch from './actions/Nomatch';
 import About from './pages/About';
 import Shop from './pages/Shop';
+import List from './pages/List';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="*" element={<Nomatch/>} />
         <Route path='/about' element={<About/>} />
         <Route path="/shop" element={<Shop/>} />
+        <Route path="/list" element={<List/>} />
       </Routes>
     </Router>
   );
