@@ -51,7 +51,7 @@ const Datas = [
 const Product = () => {
     return(
         <main>
-                <div className='bg-gray-900/25 w-full flex flex-col gap-[200px] mx-auto px-[60px] h-[420vh] lg:h-[260vh]'>
+                <div className='bg-gray-900/25 w-full flex flex-col gap-[200px] mx-auto px-[60px] h-[450vh] md:h-[420vh] lg:h-[300vh]'>
                 <section className='flex flex-col gap-[150px]'>
                     <section className='flex items-center justify-center gap-4'>
                         <div>
@@ -117,7 +117,7 @@ const Product = () => {
                     </article>
                 </section>
             </div>
-            <div className='mx-auto px-[60px]  lg:flex gap-[50px] relative w-full h-[200vh] lg:h-[120vh]'>
+            <div className='mx-auto px-[60px]  lg:flex gap-[50px] relative w-full h-[200vh] lg:h-[150vh]'>
                 <section className='absolute top-[14%] left-0'>
                     <img src={IlustrationFlowerNine} alt="Nine flower"/>
                 </section>

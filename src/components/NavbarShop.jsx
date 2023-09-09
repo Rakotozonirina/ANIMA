@@ -30,7 +30,7 @@ import {Menus} from '../actions/menus'
 const NavbarShop = () => {
     return(
         <header className='relative px-[60px]'>
-            <nav className='py-8 flex flex-wrap justify-center gap-4 items-center lg:gap-0 lg:flex-nowrap lg:container lg:mx-auto lg:px-[60px] lg:py-4 lg:flex lg:items-center lg:justify-between'>
+            <nav className='py-8 flex flex-wrap justify-center gap-14 items-center lg:gap-0 lg:flex-nowrap lg:container lg:mx-auto lg:px-[60px] lg:py-4 lg:flex lg:items-center lg:justify-between'>
                 <Link to="/">
                     <img src={Logo} alt='Logo' width={120} height={120} />
                 </Link>
@@ -96,15 +96,15 @@ const NavbarShop = () => {
             <section className='absolute z-[-10] bottom-[-2%] right-[14%]'>
                 <img src={Garlic} alt="garlic" />
             </section>
-            <section className='h-[2100vh] lg:h-[820vh] bg-stone-200/50'>
+            <section className='h-[2000vh] md:h-[1400vh] lg:h-[1050vh] xl:h-[820vh] bg-stone-200/50'>
                 <article className='h-[60vh] relative flex flex-col items-center justify-center gap-4'>
                     <section className='absolute top-0 left-[30%]'>
                         <img src={ShopFood} alt=" shop food " />
                     </section>
-                    <h1 className='text-center text-gray-900 text-[32px] lg:text-[54px] font-bold lg:leading-[72px]'>
+                    <h1 className='text-center text-gray-900 scale-[0.9] md:scale-[1] text-[32px] lg:text-[54px] font-bold lg:leading-[72px]'>
                         Découvrez Notre Menu Étoilé de Saveurs Exquises
                     </h1>
-                    <p className='lg:w-[599px] text-center text-gray-500 text-base font-medium leading-[29px]'>
+                    <p className='w-[80%] lg:w-[599px] text-center scale-[0.9] md:scale-[1] text-gray-500 text-base font-medium leading-[29px]'>
                         In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document
                     </p>
                     <section className='lg:absolute absolute bottom-[-5%] z-[-10] lg:z-0 left-[-20%] lg:bottom-[5%] lg:left-[5%]'>
@@ -114,8 +114,8 @@ const NavbarShop = () => {
                         <img src={ShopFoodTwo} alt="shop food two" />
                     </section>
                 </article>
-                <section className='relative lg:flex h-[150vh] lg:h-[60vh]'>
-                    <section className='absolute top-0 left-[20%]'>
+                <section className='relative flex h-[50vh] lg:h-[60vh]'>
+                    <section className='absolute z-[-10] lg:z-0 top-0 left-[20%]'>
                         <img src={ShopFoodTwo} alt="shop food two" />
                     </section>
                     <section>
@@ -138,9 +138,9 @@ const NavbarShop = () => {
                         <img src={ShopFoodTwo} alt="shop food two"/>
                     </section>
                 </article>
-                <section className='gap-[40px] justify-center my-[32px] flex flex-wrap h-[1800vh] lg:h-[640vh]'>
+                <section className='gap-[40px] justify-center my-[32px] flex flex-wrap h-[1800vh] md:h-[1100vh] lg:h-[640vh]'>
                     {Menus.map((menu) => (
-                        <section className='w-[350px] h-[350px] bg-zinc-800 rounded-[15px] shadow' key={menu.id}>
+                        <section className='w-[350px] h-[350px] bg-zinc-800 scale-[0.7] md:scale-[0.8] lg:scale-[0.9] xl:scale-[1] rounded-[15px] shadow' key={menu.id}>
                         <section className='relative justify-end  h-[175px] flex'>
                             <div className='absolute top-[-64%] left-[-20%]'>
                                 <img src={menu.image} alt={menu.titre} />

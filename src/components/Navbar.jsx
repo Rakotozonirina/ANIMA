@@ -10,7 +10,7 @@ import { RiTwitterLine } from "react-icons/ri";
 const Navbar = () => {
 return (
     <header className="container mx-auto px-[60px] h-[200vh] lg:h-[120vh] relative bg-white">
-        <nav className='py-8 flex flex-wrap justify-center gap-4 items-center lg:gap-0 lg:flex-nowrap lg:py-4 lg:flex lg:items-center lg:justify-between'>
+        <nav className='py-8 flex flex-wrap justify-center gap-14 items-center lg:gap-0 lg:flex-nowrap lg:py-4 lg:flex lg:items-center lg:justify-between'>
             <img src={Logo} alt='Logo' width={120} height={120} />
             <h2 className='text-orange-500 cursor-default text-xl font-black underline uppercase leading-[29px]'>acceuil</h2>
             <Link to="/contact" className='p-3 shadow-lg rounded-tl-lg rounded-br-lg bg-orange-500 text-white text-base font-bold leading-[29px]'>

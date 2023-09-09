@@ -50,7 +50,7 @@ return (
                 <p className='w-full lg:w-[452px] text-center text-neutral-600 text-xl lg:text-2xl font-normal leading-[33.60px] tracking-wide'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </article>
         </section>
-        <section className='relative flex flex-col gap-[80px] h-[350vh] lg:h-[280vh]'>
+        <section className='relative flex flex-col gap-[80px] h-[400vh] lg:h-[280vh]'>
             <section className='lg:flex lg:gap-4'>
                 <div className='lg:grow'>
                     <img src={Slice} alt="slice"/>
@@ -63,25 +63,25 @@ return (
             <div className='absolute top-[28%] left-[-20%] lg:absolute lg:top-[26%] lg:left-[-10%]'>
                 <img src={Rosemary} alt="rosemary"/>
             </div>
-            <section className='flex flex-col gap-14 lg:flex-row lg:gap-0 lg:flex lg:justify-between h-[250vh] lg:h-[180vh]'>
+            <section className='flex flex-col lg:w-full gap-14 lg:flex-row lg:flex lg:justify-between h-[250vh] lg:h-[180vh]'>
                 <section className='lg:flex lg:items-end'>
-                    <div className='lg:w-[512px] lg:h-[719px]'>
+                    <div className='w-full lg:w-[100%] lg:h-[719px]'>
                         <article>
                             <h2 className='text-black text-[32px] lg:text-[64px] font-bold leading-[105.60px]'>03.Bake</h2>
                             <p className='text-justify mb-8 text-neutral-600 text-xl lg:text-2xl font-normal leading-[33.60px] tracking-wide'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus lorem id penatibus imperdiet. Turpis egestas ultricies purus auctor tincidunt lacus nunc. Convallis pellentesque quis fringilla sagittis. Egestas in risus sit nunc nunc, arcu donec nam etiam.</p>
                         </article>
                         <section>
-                            <img src={SliceTwo} alt="bake pic"/>
+                            <img src={SliceTwo} alt="bake pic" className='block max-w-full'/>
                         </section>
                     </div>
                 </section>
                 <section>
-                    <div className='lg:w-[512px] lg:h-[719px]'>
+                    <div className='w-full lg:w-[100%] lg:h-[719px]'>
                         <section>
-                            <img src={SliceOne} alt="second slice" />
+                            <img src={SliceOne} alt="second slice" className='block max-w-full'/>
                         </section>
                         <article>
-                            <h2 className='text-black text-xl lg:text-[64px] font-bold leading-[105.60px]'>02.Pickled</h2>
+                            <h2 className='text-black text-[32px] lg:text-[64px] font-bold leading-[105.60px]'>02.Pickled</h2>
                             <p className='text-justify text-neutral-600 text-xl lg:text-2xl font-normal leading-[33.60px] tracking-wide'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus lorem id penatibus imperdiet. Turpis egestas ultricies purus auctor tincidunt lacus nunc. Convallis pellentesque quis fringilla sagittis. Egestas in risus sit nunc nunc, arcu donec nam etiam.</p>
                         </article>
                     </div>
