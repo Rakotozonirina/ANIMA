@@ -18,7 +18,7 @@ return (
                     </section>
                     <article className='px-16'>
                         <h2 className='text-black text-[32px] font-bold'>Restaurant <span className="text-orange-500 text-[32px] font-bold">le QG</span></h2>
-                        <p className='text-black w-full md:w-[60%] my-1 text-sm font-semibold leading-normal tracking-tight'>Enim tempor eget pharetra facilisis sed maecenas adipiscing. Eu leo molestie vel, ornare non id blandit netus.</p>
+                        <p className='text-black w-full md:w-[60%] scale-[0.8] md:scale-[1] my-1 text-sm font-semibold leading-normal tracking-tight'>Enim tempor eget pharetra facilisis sed maecenas adipiscing. Eu leo molestie vel, ornare non id blandit netus.</p>
                     </article>
                 </div>
                 <section className='px-16 h-[30vh] md:h-[48vh]'>
