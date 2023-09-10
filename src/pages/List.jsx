@@ -1,9 +1,12 @@
 import React from 'react'
+import NavbarList from '../components/NavbarList'
+import Footer from '../components/Footer'
 
 const List = () => {
 return (
     <div>
-        List
+        <NavbarList/>
+        <Footer/>
     </div>
 )
 }
