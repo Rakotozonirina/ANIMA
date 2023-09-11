@@ -101,7 +101,7 @@ const NavbarShop = () => {
                     <section className='absolute top-0 left-[30%]'>
                         <img src={ShopFood} alt=" shop food " />
                     </section>
-                    <h1 className='text-center text-gray-900 scale-[0.9] md:scale-[1] text-[32px] lg:text-[54px] font-bold lg:leading-[72px]'>
+                    <h1 className='text-center w-[80%] text-gray-900 scale-[0.9] md:scale-[1] text-[32px] lg:text-[54px] font-bold lg:leading-[72px] font-davidlibre'>
                         Découvrez Notre Menu Étoilé de Saveurs Exquises
                     </h1>
                     <p className='w-[80%] lg:w-[599px] text-center scale-[0.9] md:scale-[1] text-gray-500 text-base font-medium leading-[29px]'>
@@ -132,7 +132,7 @@ const NavbarShop = () => {
                     <section className='absolute top-[20%] right-[24%]'>
                         <PiQuotesFill className='w-[32px] h-[32px] rotate-180' />
                     </section>
-                    <h2 className='text-center text-gray-900 text-[32px] lg:text-[54px] font-bold leading-[65px]'>Shop</h2>
+                    <h2 className='text-center text-gray-900 text-[32px] lg:text-[54px] font-bold leading-[65px] font-davidlibre'>Shop</h2>
                     <p className='w-full lg:w-[376px] text-center text-gray-500 text-base font-medium leading-[29px]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
                     <section className='lg:absolute lg:bottom-[6%] lg:right-[10%] z-[-10] lg:z-0 absolute bottom-[-5%] right-[-5%]'>
                         <img src={ShopFoodTwo} alt="shop food two"/>

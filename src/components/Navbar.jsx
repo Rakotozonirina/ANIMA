@@ -22,7 +22,7 @@ return (
         </section>
         <section className='h-[140vh] lg:h-[78vh] mt-8 lg:mt-8 lg:flex'>
             <article className='lg:w-[580px] lg:flex lg:flex-col lg:gap-2 lg:justify-center grow'>
-                <h1 className='text-gray-900 text-[42px] lg:text-[54px] font-bold leading-[60px]'>Nous fournissons la meilleure nourriture pour vous</h1>
+                <h1 className='text-gray-900 text-[42px] lg:text-[54px] font-bold leading-[60px] font-davidlibre'>Nous fournissons la meilleure nourriture pour vous</h1>
                 <p className='text-gray-500 text-base font-medium leading-[29px] md:w-[376px]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos eveniet mollitia perferendis odit cum iusto ullam consectetur.</p>
                 <div className='w-max my-3'>
                     <Link to="/about">

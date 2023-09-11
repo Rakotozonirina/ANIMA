@@ -52,14 +52,14 @@ const Datas = [
 const Product = () => {
     return(
         <main>
-                <div className='bg-gray-900/25 w-full flex flex-col gap-[200px] mx-auto px-[60px] h-[450vh] md:h-[420vh] lg:h-[300vh]'>
+                <div className='bg-gray-900/25 w-full flex flex-col gap-[200px] mx-auto px-[60px] h-[450vh] md:h-[420vh] lg:h-[300vh] xl:h-[250vh]'>
                 <section className='flex flex-col gap-[150px]'>
                     <section className='flex items-center justify-center gap-4'>
                         <div>
                             <img src={IlustrationFlower} alt="premier illustration flower" width={224} height={212} />
                         </div>
                         <article className='flex flex-col items-center justify-center'>
-                            <h1 className='text-center text-gray-900 text-[32px] lg:text-[54px] font-bold leading-[65px] font-libredavid'>Nos plats spéciaux</h1>
+                            <h1 className='text-center text-gray-900 text-[32px] lg:text-[54px] font-bold leading-[65px] font-davidlibre'>Nos plats spéciaux</h1>
                             <p className='w-[376px] text-center text-gray-500 text-base font-medium leading-[29px]'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla qui nostrum Nulla qui nostrum</p>
                         </article>
                         <div>
@@ -103,7 +103,7 @@ const Product = () => {
                             <section>
                                 <img src={IlustrationFlower} alt="premier flower" className='absolute top-0 left-[-10%]' />
                             </section>
-                            <h1 className='lg:w-[442px] text-gray-900 lg:text-[54px] font-bold leading-[65px]'>Bienvenue dans notre restaurant</h1>
+                            <h1 className='lg:w-[442px] text-gray-900 lg:text-[54px] font-bold leading-[65px] font-davidlibre'>Bienvenue dans notre restaurant</h1>
                             <p className='lg:w-[376px] text-gray-500 text-start text-base font-medium leading-[29px]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                             <Link to="/list">
                                 <button className='lg:w-[448px] p-3 bg-gray-900 text-center text-white text-xl font-bold leading-[29px] shadow-lg rounded-tl-[12px] rounded-br-[12px]'>Liste des produits</button>
@@ -120,7 +120,7 @@ const Product = () => {
                     </article>
                 </section>
             </div>
-            <div className='mx-auto px-[60px]  lg:flex gap-[50px] relative w-full h-[200vh] lg:h-[150vh]'>
+            <div className='mx-auto px-[60px]  lg:flex gap-[50px] relative w-full h-[200vh] lg:h-[150vh] xl:h-[120vh]'>
                 <section className='absolute top-[14%] left-0'>
                     <img src={IlustrationFlowerNine} alt="Nine flower"/>
                 </section>
@@ -128,7 +128,7 @@ const Product = () => {
                     <img src={IlustrationFlowerTen} alt="Ten flower" />
                 </section>
                 <article className='flex lg:px-[60px] gap-4 flex-col justify-center grow lg:w-[577px]'>
-                    <h2 className='text-gray-900 text-[32px] lg:text-[54px] font-bold leading-[65px]'>
+                    <h2 className='text-gray-900 text-[32px] lg:text-[54px] font-bold font-davidlibre leading-[65px]'>
                         <span className='uppercase'>à</span> propos de nous
                     </h2>
                     <p className='text-justify text-gray-500 text-base font-medium leading-[29px]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br/><br/>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
