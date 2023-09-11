@@ -9,10 +9,14 @@ import ShopHeroFoodOne from '../public/shop_hero_food_one.png'
 import ShopHeroFoodTwo from '../public/shop_hero_food_two.png'
 import ShopFoodTwo from '../public/shop_food_two.png'
 import Tomate from '../public/tomate.png'
+import TomateOne from '../public/tomate_one.png'
 import Rectangle from '../public/Rectangle_one.png'
 import Leaf from '../public/leaf.png'
+import LeafOne from '../public/leaf_one.png'
 import Circle from '../public/circle.png'
+import CircleOne from '../public/circle_one.png'
 import Orange from '../public/orange.png'
+import OrangeOne from '../public/orange_one.png'
 import { PiQuotesFill } from "react-icons/pi"
 import Tabs from './Tabs'
 
@@ -37,11 +41,26 @@ const NavbarList = () => {
             <section className='absolute z-[-10] top-[40%] left-0'>
                 <img src={Leaf} alt="leaf" />
             </section>
+            <section className='absolute top-[48%] right-0'>
+                <img src={LeafOne} alt="leaf one" />
+            </section>
             <section className='absolute z-[-10] top-[20%] left-0'>
                 <img src={Circle} alt="circle"/>
             </section>
+            <section className='absolute top-[36%] right-0'>
+                <img src={CircleOne} alt="circle one" />
+            </section>
             <section className='absolute top-[30%] right-0'>
                 <img src={Orange} alt="orange"/>
+            </section>
+            <section className='absolute top-[50%] left-0'>
+                <img src={OrangeOne} alt="orange one"/>
+            </section>
+            <section className='absolute z-[-10] top-[80%] left-0'>
+                <img src={Leaf} alt="leaf" />
+            </section>
+            <section className='absolute top-[82%] right-0'>
+                <img src={TomateOne} alt="tomate one" />
             </section>
             <section className='h-[440vh] bg-stone-200/50'>
                 <article className='h-[60vh] relative flex flex-col items-center justify-center gap-4'>

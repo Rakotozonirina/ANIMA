@@ -13,7 +13,7 @@ import Rosemary from '../public/rosemary.png'
 
 const ProductAbout = () => {
 return (
-    <main className='container mx-auto px-[60px]'>
+    <main className='container mx-auto md:px-[60px]'>
         <section className="lg:flex lg:h-[180vh]">
             <section className='lg:grow lg:w-[580px] py-8 lg:py-32'>
                 <img src={AboutOne} alt="about one" />
