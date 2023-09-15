@@ -10,6 +10,7 @@ import ShopMenuFoodOne from '../public/shop_menu_food_one.png'
 import ShopMenuFoodTwo from '../public/shop_menu_food_two.png'
 import ShopMenuFoodThree from '../public/shop_menu_food_three.png'
 import ShopMenuFoodFour from '../public/shop_menu_food_four.png'
+import { motion } from 'framer-motion'
 
 
 const Datas = [
@@ -100,7 +101,7 @@ const Tabs = () => {
         <TETabsContent className='flex items-center h-[230vh]'>
             <TETabsPane show={basicActive === "tab1"} className='h-[200vh] flex my-[32px] flex-wrap gap-[40px] items-center justify-center'>
             {Datas.map((menu) => (
-                <section className='w-[350px] h-[350px] bg-zinc-800 scale-[0.7] md:scale-[0.8] lg:scale-[0.9] xl:scale-[1] rounded-[15px] shadow' key={menu.id}>
+                <motion.section initial={{ opacity: 0, scale: 0.5 }} whileInView={{ opacity: 1, scale: 1 }} transition={{ duration: 0.5 }} className='w-[350px] h-[350px] bg-zinc-800 scale-[0.7] md:scale-[0.8] lg:scale-[0.9] xl:scale-[1] rounded-[15px] shadow' key={menu.id}>
                 <section className='relative justify-end  h-[175px] flex'>
                     <div className='absolute top-[-64%] left-[-20%]'>
                         <img src={menu.image} alt={menu.titre} />
@@ -120,7 +121,7 @@ const Tabs = () => {
                         </button>
                     </div>
                 </article>
-            </section>
+            </motion.section>
             )) }
             </TETabsPane>
             <TETabsPane show={basicActive === "tab2"}>Tab 2 content</TETabsPane>

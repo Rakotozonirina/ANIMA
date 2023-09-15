@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { motion } from 'framer-motion'
 import IlustrationFlower from '../public/illustration_flower.png'
 import IlustrationFlowerOne from '../public/illustration_flower_one.png'
 import IlustrationFlowerTwo from '../public/illustration_flower_two.png'
@@ -58,17 +59,17 @@ const Product = () => {
                         <div>
                             <img src={IlustrationFlower} alt="premier illustration flower" width={224} height={212} />
                         </div>
-                        <article className='flex flex-col items-center justify-center'>
+                        <motion.article initial={{ opacity: 0, scale: 0.5 }} whileInView={{ opacity: 1, scale: 1 }} transition={{ duration: 0.5 }} className='flex flex-col items-center justify-center'>
                             <h1 className='text-center text-gray-900 text-[32px] lg:text-[54px] font-bold leading-[65px] font-davidlibre'>Nos plats spéciaux</h1>
                             <p className='w-[376px] text-center text-gray-500 text-base font-medium leading-[29px]'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla qui nostrum Nulla qui nostrum</p>
-                        </article>
+                        </motion.article>
                         <div>
                             <img src={IlustrationFlowerOne} alt="deuxième illustration flower" width={180} height={253} />
                         </div>
                     </section>
                     <section className='relative flex flex-wrap gap-[100px] justify-center lg:flex lg:items-center lg:justify-center lg:gap-6'>
                         {Datas.map((Data) => (
-                            <section className='w-[265px] h-[309px] border border-white flex items-end justify-center relative shadow-lg rounded-tl-[12px] rounded-br-[12px]' key={Data.id}>
+                            <motion.section initial={{ opacity: 0, scale: 0.5 }} whileInView={{ opacity: 1, scale: 1 }} transition={{ duration: 0.5 }} className='w-[265px] h-[309px] border border-white flex items-end justify-center relative shadow-lg rounded-tl-[12px] rounded-br-[12px]' key={Data.id}>
                                 <section className='absolute top-[-30%] left-[10%]'>
                                     <div className='relative flex items-center justify-center'>
                                         <img src={Data.img} alt={Data.altImg} />
@@ -79,7 +80,7 @@ const Product = () => {
                                     <h2 className='text-gray-900 text-center text-xl font-bold leading-relaxed'>{Data.subTitle}</h2>
                                     <p className='w-[225px] text-center text-gray-500 text-[15px] font-medium leading-relaxed'>{Data.para}</p>
                                 </article>
-                            </section>
+                            </motion.section>
                         )) }
                         <section className='absolute bottom-[-10%] left-[20%]'>
                             <img src={IlustrationFlowerTwo} alt="deuxième illustration" />
@@ -99,7 +100,7 @@ const Product = () => {
                     <div className='grow hidden md:block'>
                         <img src={HeroFood} alt="hero food" width={600} />
                     </div>
-                    <article className='flex py-[64px] md:py-0 grow flex-col justify-center relative gap-4'>
+                    <motion.article initial={{ opacity: 0, scale: 0.5 }} whileInView={{ opacity: 1, scale: 1 }} transition={{ duration: 0.5 }} className='flex py-[64px] md:py-0 grow flex-col justify-center relative gap-4'>
                             <section>
                                 <img src={IlustrationFlower} alt="premier flower" className='absolute top-0 left-[-10%]' />
                             </section>
@@ -117,7 +118,7 @@ const Product = () => {
                             <section className='absolute bottom-0 right-[-10%]'>
                                 <img src={IlustrationFlowerHeight} alt="height flower"/>
                             </section>
-                    </article>
+                    </motion.article>
                 </section>
             </div>
             <div className='mx-auto px-[60px]  lg:flex gap-[50px] relative w-full h-[200vh] lg:h-[150vh] xl:h-[120vh]'>
@@ -127,7 +128,7 @@ const Product = () => {
                 <section className='absolute top-[5%] left-[7%]'>
                     <img src={IlustrationFlowerTen} alt="Ten flower" />
                 </section>
-                <article className='flex lg:px-[60px] gap-4 flex-col justify-center grow lg:w-[577px]'>
+                <motion.article initial={{ opacity: 0, scale: 0.5 }} whileInView={{ opacity: 1, scale: 1 }} transition={{ duration: 0.5 }} className='flex lg:px-[60px] gap-4 flex-col justify-center grow lg:w-[577px]'>
                     <h2 className='text-gray-900 text-[32px] lg:text-[54px] font-bold font-davidlibre leading-[65px]'>
                         <span className='uppercase'>à</span> propos de nous
                     </h2>
@@ -135,7 +136,7 @@ const Product = () => {
                     <button className='lg:w-[167px] p-3 shadow-lg rounded-tl-lg rounded-br-lg bg-orange-500 text-white text-base font-bold'>
                         Voir plus
                     </button>
-                </article>
+                </motion.article>
                 <section className='grow pt-8'>
                     <img src={Chef} alt=" chef "/>
                 </section>

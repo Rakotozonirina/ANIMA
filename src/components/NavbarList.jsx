@@ -18,6 +18,7 @@ import CircleOne from '../public/circle_one.png'
 import Orange from '../public/orange.png'
 import OrangeOne from '../public/orange_one.png'
 import { PiQuotesFill } from "react-icons/pi"
+import { motion } from 'framer-motion'
 import Tabs from './Tabs'
 
 const NavbarList = () => {
@@ -63,7 +64,7 @@ const NavbarList = () => {
                 <img src={TomateOne} alt="tomate one" />
             </section>
             <section className='h-[440vh] bg-stone-200/50'>
-                <article className='h-[60vh] relative flex flex-col items-center justify-center gap-4'>
+                <motion.article initial={{ opacity: 0, scale: 0.5 }} whileInView={{ opacity: 1, scale: 1 }} transition={{ duration: 0.5 }} className='h-[60vh] relative flex flex-col items-center justify-center gap-4'>
                     <section className='absolute top-0 left-[30%]'>
                         <img src={ShopFood} alt=" shop food " />
                     </section>
@@ -79,8 +80,8 @@ const NavbarList = () => {
                     <section className='absolute bottom-[-24%] z-[-10] lg:z-0 right-[-20%] lg:absolute lg:bottom-0 lg:right-[5%]'>
                         <img src={ShopFoodTwo} alt="shop food two" />
                     </section>
-                </article>
-                <section className='relative flex h-[50vh] lg:h-[60vh]'>
+                </motion.article>
+                <motion.section initial={{ opacity: 0, scale: 0.5 }} whileInView={{ opacity: 1, scale: 1 }} transition={{ duration: 0.5 }} className='relative flex h-[50vh] lg:h-[60vh]'>
                     <section className='absolute z-[-10] lg:z-0 top-0 left-[20%]'>
                         <img src={ShopFoodTwoOther} alt="shop food two" />
                     </section>
@@ -93,8 +94,8 @@ const NavbarList = () => {
                     <section>
                         <img src={ShopHeroFoodTwo} alt="shop hero food two" />
                     </section>
-                </section>
-                <article className='gap-4 relative flex flex-col items-center justify-center h-[60vh]'>
+                </motion.section>
+                <motion.article initial={{ opacity: 0, scale: 0.5 }} whileInView={{ opacity: 1, scale: 1 }} transition={{ duration: 0.5 }} className='gap-4 relative flex flex-col items-center justify-center h-[60vh]'>
                     <section className='absolute top-[20%] right-[24%]'>
                         <PiQuotesFill className='w-[32px] h-[32px] rotate-180' />
                     </section>
@@ -103,7 +104,7 @@ const NavbarList = () => {
                     <section className='lg:absolute lg:bottom-[6%] lg:right-[10%] z-[-10] lg:z-0 absolute bottom-[-5%] right-[-5%]'>
                         <img src={ShopFoodTwo} alt="shop food two"/>
                     </section>
-                </article>
+                </motion.article>
                 <section className='h-[150vh]'>
                     <Tabs/>
                 </section>

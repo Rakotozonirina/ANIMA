@@ -25,6 +25,7 @@ import Garlic from '../public/garlic.png'
 import RectangleTwo from '../public/Rectangle_two.png'
 import { PiQuotesFill } from "react-icons/pi"
 import {Menus} from '../actions/menus'
+import { motion } from 'framer-motion'
 
 
 const NavbarShop = () => {
@@ -97,7 +98,7 @@ const NavbarShop = () => {
                 <img src={Garlic} alt="garlic" />
             </section>
             <section className='h-[2000vh] md:h-[1400vh] lg:h-[1050vh] xl:h-[820vh] bg-stone-200/50'>
-                <article className='h-[60vh] relative flex flex-col items-center justify-center gap-4'>
+                <motion.article initial={{ opacity: 0, scale: 0.5 }} whileInView={{ opacity: 1, scale: 1 }} transition={{ duration: 0.5 }} className='h-[60vh] relative flex flex-col items-center justify-center gap-4'>
                     <section className='absolute top-0 left-[30%]'>
                         <img src={ShopFood} alt=" shop food " />
                     </section>
@@ -113,8 +114,8 @@ const NavbarShop = () => {
                     <section className='absolute bottom-[-24%] z-[-10] lg:z-0 right-[-20%] lg:absolute lg:bottom-0 lg:right-[5%]'>
                         <img src={ShopFoodTwo} alt="shop food two" />
                     </section>
-                </article>
-                <section className='relative flex h-[50vh] lg:h-[60vh]'>
+                </motion.article>
+                <motion.section initial={{ opacity: 0, scale: 0.5 }} whileInView={{ opacity: 1, scale: 1 }} transition={{ duration: 0.5 }} className='relative flex h-[50vh] lg:h-[60vh]'>
                     <section className='absolute z-[-10] lg:z-0 top-0 left-[20%]'>
                         <img src={ShopFoodTwo} alt="shop food two" />
                     </section>
@@ -127,8 +128,8 @@ const NavbarShop = () => {
                     <section>
                         <img src={ShopHeroFoodTwo} alt="shop hero food two" />
                     </section>
-                </section>
-                <article className='gap-4 relative flex flex-col items-center justify-center h-[60vh]'>
+                </motion.section>
+                <motion.article initial={{ opacity: 0, scale: 0.5 }} whileInView={{ opacity: 1, scale: 1 }} transition={{ duration: 0.5 }} className='gap-4 relative flex flex-col items-center justify-center h-[60vh]'>
                     <section className='absolute top-[20%] right-[24%]'>
                         <PiQuotesFill className='w-[32px] h-[32px] rotate-180' />
                     </section>
@@ -137,10 +138,10 @@ const NavbarShop = () => {
                     <section className='lg:absolute lg:bottom-[6%] lg:right-[10%] z-[-10] lg:z-0 absolute bottom-[-5%] right-[-5%]'>
                         <img src={ShopFoodTwo} alt="shop food two"/>
                     </section>
-                </article>
+                </motion.article>
                 <section className='gap-[40px] justify-center my-[32px] flex flex-wrap h-[1800vh] md:h-[1100vh] lg:h-[640vh]'>
                     {Menus.map((menu) => (
-                        <section className='w-[350px] h-[350px] bg-zinc-800 scale-[0.7] md:scale-[0.8] lg:scale-[0.9] xl:scale-[1] rounded-[15px] shadow' key={menu.id}>
+                        <motion.section initial={{ opacity: 0, scale: 0.5 }} whileInView={{ opacity: 1, scale: 1 }} transition={{ duration: 0.5 }} className='w-[350px] h-[350px] bg-zinc-800 scale-[0.7] md:scale-[0.8] lg:scale-[0.9] xl:scale-[1] rounded-[15px] shadow' key={menu.id}>
                         <section className='relative justify-end  h-[175px] flex'>
                             <div className='absolute top-[-64%] left-[-20%]'>
                                 <img src={menu.image} alt={menu.titre} />
@@ -160,7 +161,7 @@ const NavbarShop = () => {
                                 </button>
                             </div>
                         </article>
-                    </section>
+                    </motion.section>
                     )) }
                 </section>
             </section>

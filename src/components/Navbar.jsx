@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import Logo from '../public/logo_qg.png';
+import { motion } from 'framer-motion'
 import ImageHero from '../public/image_hero.png';
 import OtherImage from '../public/other_hero.png';
 import { FaFacebookF, FaInstagram } from "react-icons/fa6";
@@ -21,7 +22,7 @@ return (
             <img src={OtherImage} alt="circles"/>
         </section>
         <section className='h-[140vh] lg:h-[78vh] mt-8 lg:mt-8 lg:flex'>
-            <article className='lg:w-[580px] lg:flex lg:flex-col lg:gap-2 lg:justify-center grow'>
+            <motion.article initial={{ opacity: 0, scale: 0.5 }} whileInView={{ opacity: 1, scale: 1 }} transition={{ duration: 0.5 }} className='lg:w-[580px] lg:flex lg:flex-col lg:gap-2 lg:justify-center grow'>
                 <h1 className='text-gray-900 text-[42px] lg:text-[54px] font-bold leading-[60px] font-davidlibre'>Nous fournissons la meilleure nourriture pour vous</h1>
                 <p className='text-gray-500 text-base font-medium leading-[29px] md:w-[376px]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos eveniet mollitia perferendis odit cum iusto ullam consectetur.</p>
                 <div className='w-max my-3'>
@@ -46,10 +47,10 @@ return (
                     </div>
                     <span className='w-[143px] h-[0px] opacity-20 border border-black'></span>
                 </div>
-            </article>
-            <section className='lg:w-[580px] relative grow'>
+            </motion.article>
+            <motion.section initial={{ opacity: 0, scale: 0.5 }} whileInView={{ opacity: 1, scale: 1 }} transition={{ duration: 0.5 }} className='lg:w-[580px] relative grow'>
                 <img src={ImageHero} alt="hero page" className='lg:absolute md:top-[-15%] lg:left-[-15%]' />
-            </section>
+            </motion.section>
         </section>
     </header>
 )
