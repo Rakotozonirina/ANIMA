@@ -105,7 +105,7 @@ const NavbarList = () => {
                         <img src={ShopFoodTwo} alt="shop food two"/>
                     </section>
                 </motion.article>
-                <section className='h-[150vh]'>
+                <section className='border border-red-400 h-[150vh]'>
                     <Tabs/>
                 </section>
             </section>

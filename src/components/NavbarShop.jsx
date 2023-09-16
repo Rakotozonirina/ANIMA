@@ -134,14 +134,14 @@ const NavbarShop = () => {
                         <PiQuotesFill className='w-[32px] h-[32px] rotate-180' />
                     </section>
                     <h2 className='text-center text-gray-900 text-[32px] lg:text-[54px] font-bold leading-[65px] font-davidlibre'>Shop</h2>
-                    <p className='w-full lg:w-[376px] text-center text-gray-500 text-base font-medium leading-[29px]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                    <p className='w-[80%] lg:w-[376px] text-center text-gray-500 text-base font-medium leading-[29px]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
                     <section className='lg:absolute lg:bottom-[6%] lg:right-[10%] z-[-10] lg:z-0 absolute bottom-[-5%] right-[-5%]'>
                         <img src={ShopFoodTwo} alt="shop food two"/>
                     </section>
                 </motion.article>
-                <section className='gap-[40px] justify-center my-[32px] flex flex-wrap h-[1800vh] md:h-[1100vh] lg:h-[640vh]'>
+                <section className='gap-[80px] md:gap-[40px] justify-center my-[32px] flex flex-wrap h-[1800vh] md:h-[1100vh] lg:h-[640vh]'>
                     {Menus.map((menu) => (
-                        <motion.section initial={{ opacity: 0, scale: 0.5 }} whileInView={{ opacity: 1, scale: 1 }} transition={{ duration: 0.5 }} className='w-[350px] h-[350px] bg-zinc-800 scale-[0.7] md:scale-[0.8] lg:scale-[0.9] xl:scale-[1] rounded-[15px] shadow' key={menu.id}>
+                        <motion.section initial={{ opacity: 0 }} whileInView={{ opacity: 1}} transition={{ duration: 0.5 }} className='w-[350px] h-[350px] bg-zinc-800 scale-[0.7] md:scale-[0.8] lg:scale-[0.9] xl:scale-[1] rounded-[15px] shadow' key={menu.id}>
                         <section className='relative justify-end  h-[175px] flex'>
                             <div className='absolute top-[-64%] left-[-20%]'>
                                 <img src={menu.image} alt={menu.titre} />
