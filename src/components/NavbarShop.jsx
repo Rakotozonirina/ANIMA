@@ -98,23 +98,23 @@ const NavbarShop = () => {
                 <img src={Garlic} alt="garlic" />
             </section>
             <section className='h-[2000vh] md:h-[1400vh] lg:h-[1050vh] xl:h-[820vh] bg-stone-200/50'>
-                <motion.article initial={{ opacity: 0, scale: 0.5 }} whileInView={{ opacity: 1, scale: 1 }} transition={{ duration: 0.5 }} className='h-[60vh] relative flex flex-col items-center justify-center gap-4'>
+                <article className='h-[60vh] relative flex flex-col items-center justify-center gap-4'>
                     <section className='absolute top-0 left-[30%]'>
                         <img src={ShopFood} alt=" shop food " />
                     </section>
-                    <h1 className='text-center w-[80%] text-gray-900 scale-[0.9] md:scale-[1] text-[32px] lg:text-[54px] font-bold lg:leading-[72px] font-davidlibre'>
+                    <motion.h1 initial={{ opacity: 0, scale: 0.5 }} whileInView={{ opacity: 1, scale: 1 }} transition={{ duration: 0.5 }} className='text-center w-[80%] text-gray-900 scale-[0.9] md:scale-[1] text-[32px] lg:text-[54px] font-bold lg:leading-[72px] font-davidlibre'>
                         Découvrez Notre Menu Étoilé de Saveurs Exquises
-                    </h1>
-                    <p className='w-[80%] lg:w-[599px] text-center scale-[0.9] md:scale-[1] text-gray-500 text-base font-medium leading-[29px]'>
+                    </motion.h1>
+                    <motion.p initial={{ opacity: 0, scale: 0.5 }} whileInView={{ opacity: 1, scale: 1 }} transition={{ duration: 0.5 }} className='w-[80%] lg:w-[599px] text-center scale-[0.9] md:scale-[1] text-gray-500 text-base font-medium leading-[29px]'>
                         In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document
-                    </p>
+                    </motion.p>
                     <section className='lg:absolute absolute bottom-[-5%] z-[-10] lg:z-0 left-[-20%] lg:bottom-[5%] lg:left-[5%]'>
                         <img src={ShopFoodOne} alt="shop food one" />
                     </section>
                     <section className='absolute bottom-[-24%] z-[-10] lg:z-0 right-[-20%] lg:absolute lg:bottom-0 lg:right-[5%]'>
                         <img src={ShopFoodTwo} alt="shop food two" />
                     </section>
-                </motion.article>
+                </article>
                 <motion.section initial={{ opacity: 0, scale: 0.5 }} whileInView={{ opacity: 1, scale: 1 }} transition={{ duration: 0.5 }} className='relative flex h-[50vh] lg:h-[60vh]'>
                     <section className='absolute z-[-10] lg:z-0 top-0 left-[20%]'>
                         <img src={ShopFoodTwo} alt="shop food two" />
