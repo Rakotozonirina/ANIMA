@@ -63,24 +63,24 @@ const NavbarList = () => {
             <section className='absolute top-[82%] right-0'>
                 <img src={TomateOne} alt="tomate one" />
             </section>
-            <section className='h-[440vh] bg-stone-200/50'>
-                <motion.article initial={{ opacity: 0, scale: 0.5 }} whileInView={{ opacity: 1, scale: 1 }} transition={{ duration: 0.5 }} className='h-[60vh] relative flex flex-col items-center justify-center gap-4'>
+            <section className='h-[540vh] lg:h-[440vh] bg-stone-200/50'>
+                <article className='h-[60vh] relative flex flex-col items-center justify-center gap-4'>
                     <section className='absolute top-0 left-[30%]'>
                         <img src={ShopFood} alt=" shop food " />
                     </section>
-                    <h1 className='text-center text-gray-900 scale-[0.9] md:scale-[1] text-[32px] lg:text-[54px] w-[80%] font-bold lg:leading-[72px] font-davidlibre'>
+                    <motion.h1 initial={{ opacity: 0, scale: 0.5 }} whileInView={{ opacity: 1, scale: 1 }} transition={{ duration: 0.5 }}  className='text-center text-gray-900 scale-[0.9] md:scale-[1] text-[32px] lg:text-[54px] w-[80%] font-bold lg:leading-[72px] font-davidlibre'>
                         Découvrez Notre Menu Étoilé de Saveurs Exquises
-                    </h1>
-                    <p className='w-[80%] lg:w-[599px] text-center scale-[0.9] md:scale-[1] text-gray-500 text-base font-medium leading-[29px]'>
+                    </motion.h1>
+                    <motion.p initial={{ opacity: 0, scale: 0.5 }} whileInView={{ opacity: 1, scale: 1 }} transition={{ duration: 0.5 }} className='w-[80%] lg:w-[599px] text-center scale-[0.9] md:scale-[1] text-gray-500 text-base font-medium leading-[29px]'>
                         In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document
-                    </p>
+                    </motion.p>
                     <section className='lg:absolute absolute bottom-[-5%] z-[-10] lg:z-0 left-[-20%] lg:bottom-[5%] lg:left-[5%]'>
                         <img src={ShopFoodOne} alt="shop food one" />
                     </section>
                     <section className='absolute bottom-[-24%] z-[-10] lg:z-0 right-[-20%] lg:absolute lg:bottom-0 lg:right-[5%]'>
                         <img src={ShopFoodTwo} alt="shop food two" />
                     </section>
-                </motion.article>
+                </article>
                 <motion.section initial={{ opacity: 0, scale: 0.5 }} whileInView={{ opacity: 1, scale: 1 }} transition={{ duration: 0.5 }} className='relative flex h-[50vh] lg:h-[60vh]'>
                     <section className='absolute z-[-10] lg:z-0 top-0 left-[20%]'>
                         <img src={ShopFoodTwoOther} alt="shop food two" />
@@ -95,17 +95,17 @@ const NavbarList = () => {
                         <img src={ShopHeroFoodTwo} alt="shop hero food two" />
                     </section>
                 </motion.section>
-                <motion.article initial={{ opacity: 0, scale: 0.5 }} whileInView={{ opacity: 1, scale: 1 }} transition={{ duration: 0.5 }} className='gap-4 relative flex flex-col items-center justify-center h-[60vh]'>
+                <article className='gap-4 relative flex flex-col items-center justify-center h-[60vh]'>
                     <section className='absolute top-[20%] right-[24%]'>
                         <PiQuotesFill className='w-[32px] h-[32px] rotate-180' />
                     </section>
-                    <h2 className='text-center text-gray-900 text-[32px] lg:text-[54px] font-bold leading-[65px] font-davidlibre'>Liste des produits</h2>
-                    <p className='w-full lg:w-[376px] text-center text-gray-500 text-base font-medium leading-[29px]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                    <motion.h2 initial={{ opacity: 0, scale: 0.5 }} whileInView={{ opacity: 1, scale: 1 }} transition={{ duration: 0.5 }} className='text-center text-gray-900 text-[32px] lg:text-[54px] font-bold leading-[65px] font-davidlibre'>Liste des produits</motion.h2>
+                    <motion.p initial={{ opacity: 0, scale: 0.5 }} whileInView={{ opacity: 1, scale: 1 }} transition={{ duration: 0.5 }} className='w-full lg:w-[376px] text-center text-gray-500 text-base font-medium leading-[29px]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</motion.p>
                     <section className='lg:absolute lg:bottom-[6%] lg:right-[10%] z-[-10] lg:z-0 absolute bottom-[-5%] right-[-5%]'>
                         <img src={ShopFoodTwo} alt="shop food two"/>
                     </section>
-                </motion.article>
-                <section className='border border-red-400 h-[150vh]'>
+                </article>
+                <section className='border border-red-400 h-[350vh]'>
                     <Tabs/>
                 </section>
             </section>

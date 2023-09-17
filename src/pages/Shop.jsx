@@ -20,7 +20,7 @@ const Shop = () => {
         })
     }
     return(
-        <div>
+        <div className=' overflow-x-hidden'>
             <NavbarShop/>
             <Footer/>
             { scrollTop && (

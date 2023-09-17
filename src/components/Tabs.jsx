@@ -98,7 +98,7 @@ const Tabs = () => {
                 </TETabsItem>
             </TETabs>
 
-        <TETabsContent className='flex items-center border border-green-400 h-[230vh]'>
+        <TETabsContent className='flex items-center justify-center border border-green-400 h-[230vh]'>
             <TETabsPane show={basicActive === "tab1"} className='h-[200vh] flex my-[32px] flex-wrap gap-[40px] items-center justify-center'>
             {Datas.map((menu) => (
                 <motion.section initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 0.5 }} className='w-[350px] h-[350px] bg-zinc-800 scale-[0.7] md:scale-[0.8] lg:scale-[0.9] xl:scale-[1] rounded-[15px] shadow' key={menu.id}>
