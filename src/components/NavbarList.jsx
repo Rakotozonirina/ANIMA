@@ -105,7 +105,7 @@ const NavbarList = () => {
                         <img src={ShopFoodTwo} alt="shop food two"/>
                     </section>
                 </article>
-                <section className='border border-red-400 h-[350vh]'>
+                <section className='h-[300vh]'>
                     <Tabs/>
                 </section>
             </section>
