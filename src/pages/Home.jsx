@@ -21,7 +21,7 @@ const Home = () => {
         })
     }
 return (
-    <div>
+    <div className='overflow-x-hidden'>
         <Navbar/>
         <Product/>
         <Footer/>

@@ -100,14 +100,14 @@ const Product = () => {
                     <div className='grow hidden md:block'>
                         <img src={HeroFood} alt="hero food" width={600} />
                     </div>
-                    <motion.article initial={{ opacity: 0, scale: 0.5 }} whileInView={{ opacity: 1, scale: 1 }} transition={{ duration: 0.5 }} className='flex py-[64px] md:py-0 grow flex-col justify-center relative gap-4'>
+                    <article className='flex py-[64px] md:py-0 grow flex-col justify-center relative gap-4'>
                             <section>
                                 <img src={IlustrationFlower} alt="premier flower" className='absolute top-0 left-[-10%]' />
                             </section>
-                            <h1 className='lg:w-[442px] text-gray-900 text-[32px] lg:text-[54px] font-bold leading-[65px] font-davidlibre'>Bienvenue dans notre restaurant</h1>
-                            <p className='lg:w-[376px] text-gray-500 text-start text-base font-medium leading-[29px]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <motion.h1 initial={{ opacity: 0, scale: 0.5 }} whileInView={{ opacity: 1, scale: 1 }} transition={{ duration: 0.5 }} className='lg:w-[442px] text-gray-900 text-[32px] lg:text-[54px] font-bold leading-[65px] font-davidlibre'>Bienvenue dans notre restaurant</motion.h1>
+                            <motion.p initial={{ opacity: 0, scale: 0.5 }} whileInView={{ opacity: 1, scale: 1 }} transition={{ duration: 0.5 }} className='lg:w-[376px] text-gray-500 text-start text-base font-medium leading-[29px]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</motion.p>
                             <Link to="/list">
-                                <button className='lg:w-[448px] p-3 bg-gray-900 text-center text-white text-xl font-bold leading-[29px] shadow-lg rounded-tl-[12px] rounded-br-[12px]'>Liste des produits</button>
+                                <motion.button initial={{ opacity: 0, scale: 0.5 }} whileInView={{ opacity: 1, scale: 1 }} transition={{ duration: 0.5 }} className='lg:w-[448px] p-3 bg-gray-900 text-center text-white text-xl font-bold leading-[29px] shadow-lg rounded-tl-[12px] rounded-br-[12px]'>Liste des produits</motion.button>
                             </Link>
                             <section className='absolute bottom-0 left-[-30%]'>
                                 <img src={IlustrationFlowerSix} alt="six flower" />
@@ -115,10 +115,10 @@ const Product = () => {
                             <section className='absolute bottom-[-10%] left-0'>
                                 <img src={IlustrationFlowerSeven} alt="seven flower"/>
                             </section>
-                            <section className='absolute bottom-0 right-[-10%]'>
+                            <section className='absolute bottom-0  z-[-1] md:z-0 right-[-20%] md:right-[-10%]'>
                                 <img src={IlustrationFlowerHeight} alt="height flower"/>
                             </section>
-                    </motion.article>
+                    </article>
                 </section>
             </div>
             <div className='mx-auto px-[60px]  lg:flex gap-[50px] relative w-full h-[200vh] lg:h-[150vh] xl:h-[120vh]'>
