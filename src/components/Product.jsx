@@ -68,8 +68,8 @@ const Product = () => {
                         </div>
                     </section>
                     <section className='relative flex flex-wrap gap-[100px] justify-center lg:flex lg:items-center lg:justify-center lg:gap-6'>
-                        {Datas.map((Data) => (
-                            <motion.section initial={{ opacity: 0, scale: 0.5 }} whileInView={{ opacity: 1, scale: 1 }} transition={{ duration: 0.5 }} className='w-[265px] h-[309px] border border-white flex items-end justify-center relative shadow-lg rounded-tl-[12px] rounded-br-[12px]' key={Data.id}>
+                        {Datas.map((Data, index) => (
+                            <motion.section initial={{ opacity: 0, scale: 0.5 }} whileInView={{ opacity: 1, scale: 1 }} transition={{ duration: 0.5 }} className={`w-[265px] h-[309px] border border-white flex items-end justify-center relative shadow-lg rounded-tl-[12px] rounded-br-[12px] ${index === 0 ? 'bg-slate-100' : 'bg-transparent'}`} key={Data.id}>
                                 <section className='absolute top-[-30%] left-[10%]'>
                                     <div className='relative flex items-center justify-center'>
                                         <img src={Data.img} alt={Data.altImg} />
@@ -81,7 +81,8 @@ const Product = () => {
                                     <p className='w-[225px] text-center text-gray-500 text-[15px] font-medium leading-relaxed'>{Data.para}</p>
                                 </article>
                             </motion.section>
-                        )) }
+                            )
+                        ) }
                         <section className='absolute bottom-[-10%] left-[20%]'>
                             <img src={IlustrationFlowerTwo} alt="deuxième illustration" />
                         </section>
